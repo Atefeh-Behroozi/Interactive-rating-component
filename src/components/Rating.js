@@ -9,12 +9,12 @@ const Rating = () => {
   const handleRatingClick = (value) => {
     setRating(value);
   };
-
   const handleSubmit = () => {
     if (rating !== null) {
       navigate(`/thankyou/${rating}`);
     }
   };
+
 
   return (
     <div className="rating-box">
@@ -39,5 +39,6 @@ const Rating = () => {
     </div>
   );
 };
+
 
 export default Rating;
