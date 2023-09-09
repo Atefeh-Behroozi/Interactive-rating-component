@@ -1,0 +1,116 @@
+.rating-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: hsl(216, 12%, 8%);
+    border-radius: 20px;
+    max-width: 400px;
+    margin: 100px auto;
+  }
+  
+  .rating-header {
+    font-weight: 400;
+    font-size: 23px;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 100%);
+  }
+  
+  .rating-content {
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(217, 12%, 63%);
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+
+  .rating-selected {
+    background-color: #575555;
+    color: hsl(25, 97%, 53%); 
+    padding: 10px 20px; 
+    border-radius: 20px;
+    text-align: center; 
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 20px; 
+    margin-top: 20px;
+  }
+
+  .rating-stars {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    color: hsl(217, 12%, 63%);
+  }
+  
+  
+.submit-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  border-radius: 22px;
+  width: 300px;
+  height: 38px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.submit-button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.submit-button:active {
+  background-color: hsl(0, 0%, 100%);
+}
+ 
+.number-box {
+  width: 40px;
+  height: 40px;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  cursor: pointer; 
+}
+
+.number-box:hover {
+    background-color: hsl(25, 97%, 53%);
+}
+
+.number-box.selected {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(217, 12%, 63%);
+  
+}
+
+.number-box:active {
+    background-color: hsl(216, 12%, 44%);
+}
+
+
+
+  @media (max-width: 475px) {
+    .rating-box {
+      max-width: 300px;
+      padding: 10px;
+    }
+    .rating-stars {
+      display: grid;
+    }
+    .submit-button {
+      width: 100px;
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    .rating-box {
+      max-width: 600px;
+      
+    }
+  }
